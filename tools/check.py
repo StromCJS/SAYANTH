@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 
 OUT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FILES = ["banner.svg", "banner-light.svg", "lanyard.svg",
-         "stats.svg", "langs.svg", "trophies.svg"]
+         "stats.svg", "langs.svg", "trophies.svg", "activity.svg"]
 bad = 0
 
 for fn in FILES:

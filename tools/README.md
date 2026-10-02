@@ -20,8 +20,9 @@ redistributing the font file, so all three are fetched the same way.
 ## Build
 
 ```bash
-python build.py      # writes the six SVGs to the repository root
-python check.py      # XML, duplicate ids, dangling refs, README ?v= markers
+python fetch-activity.py   # refresh the contribution calendar (optional)
+python build.py            # writes the seven SVGs to the repository root
+python check.py            # XML, duplicate ids, dangling refs, README ?v= markers
 ```
 
 Then bump `?v=` in the root `README.md`, or GitHub's image proxy will keep
@@ -33,11 +34,17 @@ serving the previous version.
 | :--- | :--- |
 | `cutout.py` | cuts `banner-source.webp` out of its white studio background and writes `cut.png` plus two preview composites |
 | `assets.py` | resizes `cut.png` and crops the face out of `ID-CARD.png`, then writes both into `assets.json` as base64 PNG |
+| `fetch-activity.py` | reads the public contribution calendar into `activity.json` — no token, same data a logged-out visitor sees |
 | `fontkit.py` | font subsetting (WOFF2, variable weight axis preserved) and Clash Display → vector outlines |
 | `build.py` | the SVGs themselves — palette, layout, SMIL |
 
-`assets.json` is committed so a plain `python build.py` works without re-running
-the image pipeline.
+`assets.json` and `activity.json` are committed, so a plain `python build.py`
+works without re-running the image or network steps.
+
+Nothing in the README depends on a third-party card service. That is deliberate:
+the activity graph used to come from `github-readme-activity-graph.vercel.app`,
+which has since been switched off and now answers every request with HTTP 402,
+so the image was broken for everyone.
 
 ## Changing the colours
 

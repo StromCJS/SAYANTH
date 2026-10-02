@@ -922,6 +922,100 @@ def trophies_card():
    transform="skewX(-20)"/></g>
 </g></svg>'''
 
+# ====================================================== CONTRIBUTION ACTIVITY
+# Replaces github-readme-activity-graph.vercel.app, whose deployment is dead
+# (HTTP 402 DEPLOYMENT_DISABLED) - the whole point of these cards is that
+# nothing here can be switched off by a third party.
+ACT = json.load(open(os.path.join(HERE, "activity.json")))
+LEVELS = ["#1a1710", "#5c4408", "#a87c14", "#d4a62c", "#ffd76a"]
+MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+
+def _nice(iso):
+    y, m, d = (int(v) for v in iso.split("-"))
+    return f"{d} {MONTHS[m - 1]} {y}"
+
+
+def activity_card():
+    W, H = 780, 208
+    CELL, PITCH = 10.0, 12.6
+    GX, GY = 54.0, 84.0
+    days = ACT["days"]
+    cols = (len(days) + 6) // 7
+
+    grid, labels, seen = [], [], None
+    for c in range(cols):
+        cells = []
+        for r in range(7):
+            i = c * 7 + r
+            if i >= len(days):
+                break
+            date, lvl, n = days[i]
+            x, y = GX + c * PITCH, GY + r * PITCH
+            glow = ' filter="url(#Cglow)"' if lvl >= 4 else ""
+            cells.append(f'<rect x="{f(x)}" y="{f(y)}" width="{CELL}" height="{CELL}"'
+                         f' rx="2.4" fill="{LEVELS[lvl]}"{glow}>'
+                         f'<title>{n} on {e(_nice(date))}</title></rect>')
+            if r == 0:
+                mo = date[5:7]
+                if mo != seen:
+                    seen = mo
+                    labels.append((c, x, int(mo)))
+        b = f"{.25 + c * .016:.3f}s"
+        grid.append(f'<g opacity="0"><animate attributeName="opacity" values="0;1"'
+                    f' dur=".4s" begin="{b}" fill="freeze"/>'
+                    f'<animateTransform attributeName="transform" type="translate"'
+                    f' values="0,7;0,0" dur=".45s" begin="{b}" calcMode="spline"'
+                    f' keySplines=".2 .8 .3 1" fill="freeze"/>{"".join(cells)}</g>')
+
+    # a month that only spans a column or two has nowhere to put its name
+    # without colliding with the next one, so it goes unlabelled
+    labels.append((cols, 0.0, 0))
+    labels = "".join(
+        f'<text class="cf" x="{f(x)}" y="76" font-size="9" fill="#9b8c68">'
+        f'{MONTHS[m - 1]}</text>'
+        for (c, x, m), (nxt, _, _) in zip(labels, labels[1:]) if nxt - c >= 3)
+
+    dayname = "".join(
+        f'<text class="cf" x="46" y="{f(GY + r * PITCH + 8)}" font-size="8"'
+        f' text-anchor="end" fill="#6e6450">{nm}</text>'
+        for r, nm in ((1, "Mon"), (3, "Wed"), (5, "Fri")))
+
+    lx = 560.0
+    legend = [f'<text class="cf" x="{f(lx)}" y="192" font-size="8.5"'
+              f' fill="#6e6450">Less</text>']
+    for k, col in enumerate(LEVELS):
+        legend.append(f'<rect x="{f(lx + 26 + k * 13)}" y="184" width="9.5" height="9.5"'
+                      f' rx="2.2" fill="{col}"/>')
+    legend.append(f'<text class="cf" x="{f(lx + 26 + 5 * 13 + 4)}" y="192" font-size="8.5"'
+                  f' fill="#6e6450">More</text>')
+
+    head = f'''<g opacity="0"><animate attributeName="opacity" values="0;1" dur=".5s"
+     begin=".2s" fill="freeze"/>
+  <text class="cm" x="748" y="38" font-size="19" font-weight="700" text-anchor="end"
+        fill="#ffd76a">{ACT["total"]}</text>
+  <text class="cf" x="748" y="52" font-size="9.5" text-anchor="end"
+        fill="#9b8c68">contributions &#183; {ACT["active"]} active days &#183;
+        best day {ACT["best"]}</text></g>'''
+
+    sub = f'{_nice(ACT["from"])} &#8594; {_nice(ACT["to"])} &#183; public contributions'
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}"
+ height="{H}" fill="none" role="img"
+ aria-label="{e(NAME)} contribution activity: {ACT['total']} contributions over the last year">
+<title>{e(NAME)} &#183; {ACT['total']} contributions, {ACT['active']} active days</title>
+{card_defs(W, H)}<g clip-path="url(#Cclip)">
+{card_shell(W, H, "Contribution Activity", "")}
+<text class="cf" x="32" y="50" font-size="10" fill="#9b8c68">{sub}</text>
+{head}
+{labels}
+{dayname}
+{"".join(grid)}
+{"".join(legend)}
+<g class="csh"><rect x="-80" y="0" width="120" height="{H}" fill="url(#Cshine)"
+   transform="skewX(-20)"/></g>
+</g></svg>'''
+
 # ------------------------------------------------------------------ write
 NOTICE = """<!--
   Sayanth V - animated GitHub profile assets.
@@ -969,7 +1063,8 @@ def _fontface(mono, sans):
 def main():
     files = {"banner.svg": banner(DARK), "banner-light.svg": banner(LIGHT),
              "lanyard.svg": lanyard(), "stats.svg": stats_card(),
-             "langs.svg": langs_card(), "trophies.svg": trophies_card()}
+             "langs.svg": langs_card(), "trophies.svg": trophies_card(),
+             "activity.svg": activity_card()}
     os.makedirs(OUT, exist_ok=True)
     for n, s in files.items():
         face, emb = _fontface(*_charsets(s))
