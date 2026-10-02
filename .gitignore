@@ -1,3 +1,13 @@
 # Personal photo kept locally for reference - nothing in the profile uses it.
 # Delete this line if you want it published.
 ME1.png
+
+# Font sources: fetched by tools/fetch-fonts.sh, never committed.
+# Clash Display's licence does not allow redistributing the font file.
+tools/fonts/
+
+# Build intermediates
+tools/cut.png
+tools/preview-dark.png
+tools/preview-light.png
+tools/face_check.png

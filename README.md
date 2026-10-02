@@ -1,15 +1,21 @@
 <!--
   Profile README for @StromCJS  ·  black & gold
-  Every local asset carries ?v=2 — bump it to v=3, v=4 ... whenever you edit an
-  SVG, otherwise GitHub's image proxy (camo) will keep serving the old cached copy.
+  Type: Clash Display (outlines) + Sora + JetBrains Mono, embedded per file.
+
+  These SVGs are GENERATED - see tools/README.md. Do not hand-edit their text:
+  each file carries a font subset holding only the characters it already uses,
+  so a new character would render as a blank box.
+
+  Every local asset carries ?v=3 - bump it to v=4, v=5 ... after every rebuild,
+  or GitHub's image proxy (camo) will keep serving the previous copy.
 -->
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./banner.svg?v=2">
-  <source media="(prefers-color-scheme: light)" srcset="./banner-light.svg?v=2">
-  <img alt="Sayanth V — Web Developer" src="./banner.svg?v=2" width="100%">
+  <source media="(prefers-color-scheme: dark)"  srcset="./banner.svg?v=3">
+  <source media="(prefers-color-scheme: light)" srcset="./banner-light.svg?v=3">
+  <img alt="Sayanth V — Web Developer" src="./banner.svg?v=3" width="100%">
 </picture>
 
 <br>
@@ -30,7 +36,7 @@
 
 <div align="center">
 
-<img src="./lanyard.svg?v=2" alt="Sayanth V — ID badge" width="260">
+<img src="./lanyard.svg?v=3" alt="Sayanth V — ID badge" width="260">
 
 ### `Turning ☕ into Code & Ideas into Reality.`
 
@@ -137,17 +143,17 @@ const sayanth = {
 
 <div align="center">
 
-<img src="./stats.svg?v=2" alt="GitHub snapshot" width="48%">
+<img src="./stats.svg?v=3" alt="GitHub snapshot" width="48%">
 &nbsp;
-<img src="./langs.svg?v=2" alt="Most used languages" width="48%">
+<img src="./langs.svg?v=3" alt="Most used languages" width="48%">
 
 <br><br>
 
-<img src="./trophies.svg?v=2" alt="Trophies" width="98%">
+<img src="./trophies.svg?v=3" alt="Trophies" width="98%">
 
 <sub>These three cards are plain local SVGs — no third-party card service, so they never rate-limit or 404.<br>
 Numbers were read from the GitHub API on 2 Oct 2026. To refresh them, edit the text inside
-<code>stats.svg</code> / <code>langs.svg</code> / <code>trophies.svg</code> and bump <code>?v=2</code> in this file.</sub>
+<code>tools/build.py</code>, re-run it and bump <code>?v=3</code> in this file.</sub>
 
 </div>
 
@@ -197,6 +203,7 @@ Numbers were read from the GitHub API on 2 Oct 2026. To refresh them, edit the t
 
 **`KEEP CODING · KEEP GROWING`**
 
-<sub>Thanks for scrolling this far — now go build something. ✨</sub>
+<sub>Set in <b>Clash Display</b>, <b>Sora</b> and <b>JetBrains Mono</b> — see <a href="./fonts/README.md">fonts/</a>.<br>
+Thanks for scrolling this far — now go build something. ✨</sub>
 
 </div>
