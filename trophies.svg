@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 196" width="780"
+ height="196" fill="none" role="img" aria-label="SAYANTH V profile trophies">
+<title>SAYANTH V &#183; trophies</title>
+<defs>
+<linearGradient id="Cbg" x1="0" y1="0" x2=".7" y2="1">
+  <stop offset="0" stop-color="#141209"/><stop offset=".55" stop-color="#0b0a07"/>
+  <stop offset="1" stop-color="#1a160c"/></linearGradient>
+<linearGradient id="Cacc" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#ffd76a"/><stop offset=".5" stop-color="#c8921f"/>
+  <stop offset="1" stop-color="#fff3cf"/></linearGradient>
+<linearGradient id="Cshine" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+  <stop offset=".5" stop-color="#fff" stop-opacity=".13"/>
+  <stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<filter id="Cglow" x="-70%" y="-70%" width="240%" height="240%">
+  <feGaussianBlur stdDeviation="3.4" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<clipPath id="Cclip"><rect width="780" height="196" rx="16"/></clipPath>
+</defs><style>
+  .cf{font-family:Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Noto Sans,Arial,sans-serif} .cm{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,DejaVu Sans Mono,Courier New,monospace}
+  @keyframes csh{0%{transform:translateX(-260px)}60%,100%{transform:translateX(900px)}}
+  .csh{animation:csh 5s cubic-bezier(.5,0,.3,1) infinite}
+  @media (prefers-reduced-motion:reduce){.csh{animation:none}}
+</style><g clip-path="url(#Cclip)">
+<rect width="780" height="196" rx="16" fill="url(#Cbg)"
+      stroke="#f5c542" stroke-opacity=".30"/>
+<rect x="18" y="22" width="4" height="18" rx="2" fill="url(#Cacc)"/>
+<text class="cf" x="32" y="34" font-size="15.5" font-weight="800"
+      fill="#f8f2e3">Trophies</text>
+<text class="cf" x="32" y="50" font-size="10" fill="#9b8c68">a local, rate-limit-free trophy shelf</text>
+<g opacity="0" transform="translate(70,110)">
+  <animate attributeName="opacity" values="0;1" dur=".4s" begin="0.30s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="scale" additive="sum"
+      values=".55;1.12;.97;1" keyTimes="0;.55;.8;1" dur=".6s" begin="0.30s"
+      calcMode="spline" keySplines=".2 .9 .3 1;.4 0 .6 1;.4 0 .6 1" fill="freeze"/>
+  <g transform="translate(-59,-110)">
+    <rect x="0" y="52" width="118" height="124" rx="13" fill="#ffffff"
+          fill-opacity=".045" stroke="#f5c542" stroke-opacity=".38"/>
+    <g transform="translate(59,96)" fill="#f5c542">
+      <path d="M-8-13H8v6.5A8 8 0 0 1-8-6.5Z M-2 1.2h4v4.2h-4Z M-7.5 5.4h15v3.4h-15Z"/>
+      <path d="M-8.4-11.6h-3.6a4.6 4.6 0 0 0 4.6 7.6M8.4-11.6h3.6a4.6 4.6 0 0 1-4.6 7.6" fill="none" stroke="#f5c542" stroke-width="2.4"/></g>
+    <text class="cm" x="59" y="134" font-size="21" font-weight="800"
+          text-anchor="middle" fill="#f5c542" filter="url(#Cglow)">B</text>
+    <text class="cf" x="59" y="152" font-size="10.5" font-weight="700"
+          text-anchor="middle" fill="#f2ead7">Repositories</text>
+    <text class="cf" x="59" y="166" font-size="8.8" text-anchor="middle"
+          fill="#9b8c68">17 public</text></g></g><g opacity="0" transform="translate(198,110)">
+  <animate attributeName="opacity" values="0;1" dur=".4s" begin="0.42s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="scale" additive="sum"
+      values=".55;1.12;.97;1" keyTimes="0;.55;.8;1" dur=".6s" begin="0.42s"
+      calcMode="spline" keySplines=".2 .9 .3 1;.4 0 .6 1;.4 0 .6 1" fill="freeze"/>
+  <g transform="translate(-59,-110)">
+    <rect x="0" y="52" width="118" height="124" rx="13" fill="#ffffff"
+          fill-opacity=".045" stroke="#b8860b" stroke-opacity=".38"/>
+    <g transform="translate(59,96)" fill="#b8860b">
+      <path d="M-8-13H8v6.5A8 8 0 0 1-8-6.5Z M-2 1.2h4v4.2h-4Z M-7.5 5.4h15v3.4h-15Z"/>
+      <path d="M-8.4-11.6h-3.6a4.6 4.6 0 0 0 4.6 7.6M8.4-11.6h3.6a4.6 4.6 0 0 1-4.6 7.6" fill="none" stroke="#b8860b" stroke-width="2.4"/></g>
+    <text class="cm" x="59" y="134" font-size="21" font-weight="800"
+          text-anchor="middle" fill="#b8860b" filter="url(#Cglow)">C</text>
+    <text class="cf" x="59" y="152" font-size="10.5" font-weight="700"
+          text-anchor="middle" fill="#f2ead7">Stars</text>
+    <text class="cf" x="59" y="166" font-size="8.8" text-anchor="middle"
+          fill="#9b8c68">1 earned</text></g></g><g opacity="0" transform="translate(326,110)">
+  <animate attributeName="opacity" values="0;1" dur=".4s" begin="0.54s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="scale" additive="sum"
+      values=".55;1.12;.97;1" keyTimes="0;.55;.8;1" dur=".6s" begin="0.54s"
+      calcMode="spline" keySplines=".2 .9 .3 1;.4 0 .6 1;.4 0 .6 1" fill="freeze"/>
+  <g transform="translate(-59,-110)">
+    <rect x="0" y="52" width="118" height="124" rx="13" fill="#ffffff"
+          fill-opacity=".045" stroke="#f5c542" stroke-opacity=".38"/>
+    <g transform="translate(59,96)" fill="#f5c542">
+      <path d="M-8-13H8v6.5A8 8 0 0 1-8-6.5Z M-2 1.2h4v4.2h-4Z M-7.5 5.4h15v3.4h-15Z"/>
+      <path d="M-8.4-11.6h-3.6a4.6 4.6 0 0 0 4.6 7.6M8.4-11.6h3.6a4.6 4.6 0 0 1-4.6 7.6" fill="none" stroke="#f5c542" stroke-width="2.4"/></g>
+    <text class="cm" x="59" y="134" font-size="21" font-weight="800"
+          text-anchor="middle" fill="#f5c542" filter="url(#Cglow)">B</text>
+    <text class="cf" x="59" y="152" font-size="10.5" font-weight="700"
+          text-anchor="middle" fill="#f2ead7">Languages</text>
+    <text class="cf" x="59" y="166" font-size="8.8" text-anchor="middle"
+          fill="#9b8c68">4 in use</text></g></g><g opacity="0" transform="translate(454,110)">
+  <animate attributeName="opacity" values="0;1" dur=".4s" begin="0.66s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="scale" additive="sum"
+      values=".55;1.12;.97;1" keyTimes="0;.55;.8;1" dur=".6s" begin="0.66s"
+      calcMode="spline" keySplines=".2 .9 .3 1;.4 0 .6 1;.4 0 .6 1" fill="freeze"/>
+  <g transform="translate(-59,-110)">
+    <rect x="0" y="52" width="118" height="124" rx="13" fill="#ffffff"
+          fill-opacity=".045" stroke="#f5c542" stroke-opacity=".38"/>
+    <g transform="translate(59,96)" fill="#f5c542">
+      <path d="M-8-13H8v6.5A8 8 0 0 1-8-6.5Z M-2 1.2h4v4.2h-4Z M-7.5 5.4h15v3.4h-15Z"/>
+      <path d="M-8.4-11.6h-3.6a4.6 4.6 0 0 0 4.6 7.6M8.4-11.6h3.6a4.6 4.6 0 0 1-4.6 7.6" fill="none" stroke="#f5c542" stroke-width="2.4"/></g>
+    <text class="cm" x="59" y="134" font-size="21" font-weight="800"
+          text-anchor="middle" fill="#f5c542" filter="url(#Cglow)">B</text>
+    <text class="cf" x="59" y="152" font-size="10.5" font-weight="700"
+          text-anchor="middle" fill="#f2ead7">Experience</text>
+    <text class="cf" x="59" y="166" font-size="8.8" text-anchor="middle"
+          fill="#9b8c68">since 2024</text></g></g><g opacity="0" transform="translate(582,110)">
+  <animate attributeName="opacity" values="0;1" dur=".4s" begin="0.78s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="scale" additive="sum"
+      values=".55;1.12;.97;1" keyTimes="0;.55;.8;1" dur=".6s" begin="0.78s"
+      calcMode="spline" keySplines=".2 .9 .3 1;.4 0 .6 1;.4 0 .6 1" fill="freeze"/>
+  <g transform="translate(-59,-110)">
+    <rect x="0" y="52" width="118" height="124" rx="13" fill="#ffffff"
+          fill-opacity=".045" stroke="#ffe9a8" stroke-opacity=".38"/>
+    <g transform="translate(59,96)" fill="#ffe9a8">
+      <path d="M-8-13H8v6.5A8 8 0 0 1-8-6.5Z M-2 1.2h4v4.2h-4Z M-7.5 5.4h15v3.4h-15Z"/>
+      <path d="M-8.4-11.6h-3.6a4.6 4.6 0 0 0 4.6 7.6M8.4-11.6h3.6a4.6 4.6 0 0 1-4.6 7.6" fill="none" stroke="#ffe9a8" stroke-width="2.4"/></g>
+    <text class="cm" x="59" y="134" font-size="21" font-weight="800"
+          text-anchor="middle" fill="#ffe9a8" filter="url(#Cglow)">A</text>
+    <text class="cf" x="59" y="152" font-size="10.5" font-weight="700"
+          text-anchor="middle" fill="#f2ead7">MERN Stack</text>
+    <text class="cf" x="59" y="166" font-size="8.8" text-anchor="middle"
+          fill="#9b8c68">end to end</text></g></g><g opacity="0" transform="translate(710,110)">
+  <animate attributeName="opacity" values="0;1" dur=".4s" begin="0.90s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="scale" additive="sum"
+      values=".55;1.12;.97;1" keyTimes="0;.55;.8;1" dur=".6s" begin="0.90s"
+      calcMode="spline" keySplines=".2 .9 .3 1;.4 0 .6 1;.4 0 .6 1" fill="freeze"/>
+  <g transform="translate(-59,-110)">
+    <rect x="0" y="52" width="118" height="124" rx="13" fill="#ffffff"
+          fill-opacity=".045" stroke="#ffe9a8" stroke-opacity=".38"/>
+    <g transform="translate(59,96)" fill="#ffe9a8">
+      <path d="M-8-13H8v6.5A8 8 0 0 1-8-6.5Z M-2 1.2h4v4.2h-4Z M-7.5 5.4h15v3.4h-15Z"/>
+      <path d="M-8.4-11.6h-3.6a4.6 4.6 0 0 0 4.6 7.6M8.4-11.6h3.6a4.6 4.6 0 0 1-4.6 7.6" fill="none" stroke="#ffe9a8" stroke-width="2.4"/></g>
+    <text class="cm" x="59" y="134" font-size="21" font-weight="800"
+          text-anchor="middle" fill="#ffe9a8" filter="url(#Cglow)">A</text>
+    <text class="cf" x="59" y="152" font-size="10.5" font-weight="700"
+          text-anchor="middle" fill="#f2ead7">Cloud</text>
+    <text class="cf" x="59" y="166" font-size="8.8" text-anchor="middle"
+          fill="#9b8c68">AWS/Azure/GCP</text></g></g>
+<g class="csh"><rect x="-80" y="0" width="120" height="196" fill="url(#Cshine)"
+   transform="skewX(-20)"/></g>
+</g></svg>
