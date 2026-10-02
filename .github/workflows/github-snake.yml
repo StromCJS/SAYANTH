@@ -3,8 +3,8 @@ name: Generate Snake Animation
 # Builds a black-and-gold contribution snake from StromCJS's contribution graph
 # and publishes it to the "output" branch, where the README reads it from.
 #
-# NOTE: for this to drive a *profile* README, the repository must be named
-# exactly "StromCJS" (same as the GitHub username).
+# This repository is named "StromCJS", matching the username, which is what
+# makes its README the profile README. Renaming it would break that.
 
 on:
   schedule:

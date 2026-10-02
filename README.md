@@ -178,9 +178,9 @@ Refresh it with <code>python tools/fetch-activity.py &amp;&amp; python tools/bui
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/StromCJS/SAYANTH/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/StromCJS/SAYANTH/output/github-snake.svg">
-  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/StromCJS/SAYANTH/output/github-snake.svg" width="98%">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/StromCJS/StromCJS/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/StromCJS/StromCJS/output/github-snake.svg">
+  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/StromCJS/StromCJS/output/github-snake.svg" width="98%">
 </picture>
 
 <sub>Regenerated daily by <a href="./.github/workflows/github-snake.yml"><code>github-snake.yml</code></a> → the <code>output</code> branch.</sub>
